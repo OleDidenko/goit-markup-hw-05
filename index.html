@@ -47,7 +47,7 @@
     <main>
       <section class="hero">
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-menu-open>Заказать услугу</button>
       </section>
       <section class="section"> 
         <div class="container">
@@ -95,10 +95,22 @@
   <section class="section what-we-do">
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
-    <ul class="picture">
-        <li class="item"><img src="./images/img-4.jpg" class="picture-image no-gap" alt="Рабочий стол с гаджетами" width="370"></li>
-        <li class="item"><img src="./images/img-5.jpg" class="picture-image no-gap" alt="Гаджеты" width="370"></li>
-        <li class="item"><img src="./images/img-6.jpg" class="picture-image no-gap" alt="Айпед" width="370"></li>
+    <ul class="picture">        
+        <li class="item"><img src="./images/img-4.jpg" class="picture-image no-gap" alt="Рабочий стол с гаджетами" width="370">
+        <div class="box">
+        <p class="text">Десктопные приложения</p>
+        </div>
+        </li>
+        <li class="item"><img src="./images/img-5.jpg" class="picture-image no-gap" alt="Гаджеты" width="370">
+            <div class="box">
+        <p class="text">Мобильные приложения</p>
+        </div>
+        </li>
+        <li class="item"><img src="./images/img-6.jpg" class="picture-image no-gap" alt="Айпед" width="370">
+            <div class="box">
+        <p class="text">Дизайнерские решения</p>
+        </div>
+        </li>
     </ul>
     </div>
   </section>
@@ -343,5 +355,15 @@
 </div>
 </div>
 </footer>
+<div class="backdrop is-hidden" data-menu>
+    <div class="modal">
+        <button class="modal-btn" type="button" data-menu-close>
+            <svg width="11" height="11">
+                <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
